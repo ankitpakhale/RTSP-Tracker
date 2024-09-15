@@ -1,0 +1,120 @@
+/* Styling for the form container */
+#add-ticker-form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 20px auto;
+     padding: 20px;
+     background-color: #ffffff;
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the input field */
+#new-ticker {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 16px;
+     box-sizing: border-box;
+}
+
+/* Focus state for the input field */
+#new-ticker:focus {
+     border-color: #007bff;
+     outline: none;
+     box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.2);
+}
+
+/* Styling for the submit button */
+#add-ticker-form button {
+     padding: 10px 20px;
+     font-size: 16px;
+     color: #fff;
+     background-color: #007bff;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover state for the button */
+#add-ticker-form button:hover {
+     background-color: #0056b3;
+     transform: scale(1.05);
+}
+
+/* Focus state for the button */
+#add-ticker-form button:focus {
+     outline: none;
+}
+
+/* Container for stock boxes with flex layout */
+#tickers-grid {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     padding: 20px;
+     background-color: #f5f5f5;
+}
+
+/* Individual stock box styling */
+.stock-box {
+     width: 220px;
+     border: 2px solid #333;
+     border-radius: 8px;
+     margin: 10px;
+     padding: 15px;
+     transition: background-color 0.5s, transform 0.3s;
+     background: #fff;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for stock boxes */
+.stock-box:hover {
+     transform: scale(1.05);
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Text color classes for stock prices and percentages */
+.dark-red {
+     color: #b30000;
+}
+
+.red {
+     color: #e60000;
+}
+
+.gray {
+     color: #707070;
+}
+
+.green {
+     color: #009900;
+}
+
+.dark-green {
+     color: #004d00;
+}
+
+/* Flashing background color classes */
+.red-flash {
+     transition: background-color 1s, transform 0.3s;
+     background-color: #ffcccc !important;
+     transform: scale(1.02);
+}
+
+.green-flash {
+     transition: background-color 1s, transform 0.3s;
+     background-color: #ccffcc !important;
+     transform: scale(1.02);
+}
+
+.gray-flash {
+     transition: background-color 1s, transform 0.3s;
+     background-color: #e0e0e0 !important;
+     transform: scale(1.02);
+}
